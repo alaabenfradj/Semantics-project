@@ -18,6 +18,12 @@ import java.util.ArrayList;
 @CrossOrigin("http://localhost:3000/")
 public class TestController {
 
+	@GetMapping("/test")
+	public String testingController(){
+		return "Alaa Ben Fradj";
+	}
+
+
 //school
     @GetMapping(value="/school/getbyname/{name}",produces = MediaType.APPLICATION_JSON_VALUE)
     public String getSchoolByname(@PathVariable(value = "name") String name) throws UnsupportedEncodingException {
